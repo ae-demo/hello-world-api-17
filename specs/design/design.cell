@@ -1,5 +1,7 @@
 title Hello World API
 
+phase 1
+
 component hello-webapp as "Hello World Webapp" web-application [stories: 1]
 component hello-api as "Hello World API" service [stories: 1, 2]
 
