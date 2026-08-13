@@ -1,0 +1,19 @@
+apiVersion: openchoreo.dev/v1alpha1
+metadata:
+  name: hello-webapp
+
+endpoints:
+  - name: http
+    type: HTTP
+    port: 9090
+    basePath: /
+    visibility:
+      - external
+
+dependencies:
+  endpoints:
+    - component: hello-world-api-17-hello-api
+      name: http
+      visibility: project
+      envBindings:
+        address: HELLO_API_URL
