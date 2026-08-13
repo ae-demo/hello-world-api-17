@@ -10,14 +10,24 @@
   "stories": [
     1
   ],
+  "description": "Single-page React app that calls hello-api and renders the greeting it returns. Serves the Visitor's story of confirming the demo works end to end. Does not implement any greeting logic itself, does not require sign-in, and holds no other pages or state.",
   "dependencies": [
     {
-      "description": "Calls the greeting endpoint to fetch and display the static Hello World message.",
       "kind": "component",
-      "name": "hello-api"
+      "name": "hello-api",
+      "description": "Calls the greeting endpoint to fetch and display the static Hello World message.",
+      "wiring": {
+        "endpoint": {
+          "component": "hello-world-api-17-hello-api",
+          "name": "http",
+          "visibility": "project",
+          "envBindings": {
+            "address": "HELLO_API_URL"
+          }
+        }
+      }
     }
   ],
-  "description": "Single-page React app that calls hello-api and renders the greeting it returns. Serves the Visitor's story of confirming the demo works end to end. Does not implement any greeting logic itself, does not require sign-in, and holds no other pages or state.",
   "skillsPinned": [
     "wireframes",
     "react-webapp"
