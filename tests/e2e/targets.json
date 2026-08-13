@@ -1,0 +1,7 @@
+{
+  "targets": {
+    "hello-api": "http://development-default.apps.94.72.97.95.sslip.io/hello-world-api-17-hello-api-http",
+    "hello-webapp": "http://http-hello-world-a-development-default-1df166bd.apps.94.72.97.95.sslip.io/"
+  },
+  "primary": "hello-webapp"
+}

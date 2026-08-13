@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "issue": 4,
+  "commit": "dc94fc4e7840251634488186367fa440cf948dc7",
+  "generatedAt": "2026-08-13T13:13:09.551Z",
+  "playwrightVersion": "1.61.1",
+  "totals": {
+    "e2e": {
+      "total": 5,
+      "pass": 3,
+      "fail": 2,
+      "notRun": 0
+    },
+    "manual": 0,
+    "scenario": 0
+  },
+  "criteria": [
+    {
+      "id": "AC-001-a",
+      "requirementId": "REQ-001",
+      "must": "Opening the web app displays a greeting on screen without requiring sign-in",
+      "method": "e2e",
+      "status": "fail",
+      "spec": "tests/e2e/specs/AC-001-a.spec.ts",
+      "healed": false,
+      "healAttempts": 0,
+      "flaky": false,
+      "durationMs": 10472,
+      "failure": {
+        "message": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 10000ms\n  - waiting for getByRole('heading', { level: 1 })\n",
+        "location": "AC-001-a.spec.ts:4"
+      }
+    },
+    {
+      "id": "AC-001-b",
+      "requirementId": "REQ-001",
+      "must": "The displayed greeting text is exactly \"Hello, World!\"",
+      "method": "e2e",
+      "status": "fail",
+      "spec": "tests/e2e/specs/AC-001-b.spec.ts",
+      "healed": false,
+      "healAttempts": 0,
+      "flaky": false,
+      "durationMs": 10548,
+      "failure": {
+        "message": "Error: expect(locator).toHaveText(expected) failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: \"Hello, World!\"\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toHaveText\" with timeout 10000ms\n  - waiting for getByRole('heading', { level: 1 })\n",
+        "location": "AC-001-b.spec.ts:4"
+      }
+    },
+    {
+      "id": "AC-002-a",
+      "requirementId": "REQ-002",
+      "must": "A direct GET request to the greeting endpoint returns HTTP 200",
+      "method": "e2e",
+      "status": "pass",
+      "spec": "tests/e2e/specs/AC-002-a.spec.ts",
+      "healed": false,
+      "healAttempts": 0,
+      "flaky": false,
+      "durationMs": 116,
+      "failure": null
+    },
+    {
+      "id": "AC-002-b",
+      "requirementId": "REQ-002",
+      "must": "The response body contains the exact message \"Hello, World!\"",
+      "method": "e2e",
+      "status": "pass",
+      "spec": "tests/e2e/specs/AC-002-b.spec.ts",
+      "healed": false,
+      "healAttempts": 0,
+      "flaky": false,
+      "durationMs": 41,
+      "failure": null
+    },
+    {
+      "id": "AC-002-c",
+      "requirementId": "REQ-002",
+      "must": "The endpoint is reachable without any authentication or API key",
+      "method": "e2e",
+      "status": "pass",
+      "spec": "tests/e2e/specs/AC-002-c.spec.ts",
+      "healed": false,
+      "healAttempts": 0,
+      "flaky": false,
+      "durationMs": 49,
+      "failure": null
+    }
+  ]
+}
