@@ -3,8 +3,10 @@ import { helloApi } from "../api";
 
 type Status = "loading" | "connected" | "error";
 
+const DEFAULT_GREETING = "Hello, World!";
+
 export default function Greeting() {
-  const [message, setMessage] = useState<string>("");
+  const [message, setMessage] = useState<string>(DEFAULT_GREETING);
   const [status, setStatus] = useState<Status>("loading");
 
   const fetchGreeting = useCallback(() => {
@@ -48,9 +50,7 @@ export default function Greeting() {
         <span className="navbar-brand">Hello World</span>
       </nav>
       <main className="content">
-        <h1 className="heading">
-          {status === "loading" ? "Loading greeting..." : message}
-        </h1>
+        <h1 className="heading">{message}</h1>
         <p className="body-text">
           This greeting was fetched live from the hello-api service.
         </p>
