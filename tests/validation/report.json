@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
   "issue": 4,
-  "commit": "dc94fc4e7840251634488186367fa440cf948dc7",
-  "generatedAt": "2026-08-13T13:13:09.551Z",
+  "commit": "717bffaf8affd114dcb861272d3e8dcbe6f90b71",
+  "generatedAt": "2026-08-13T13:28:36.488Z",
   "playwrightVersion": "1.61.1",
   "totals": {
     "e2e": {
       "total": 5,
-      "pass": 3,
-      "fail": 2,
+      "pass": 5,
+      "fail": 0,
       "notRun": 0
     },
     "manual": 0,
@@ -20,32 +20,26 @@
       "requirementId": "REQ-001",
       "must": "Opening the web app displays a greeting on screen without requiring sign-in",
       "method": "e2e",
-      "status": "fail",
+      "status": "pass",
       "spec": "tests/e2e/specs/AC-001-a.spec.ts",
       "healed": false,
       "healAttempts": 0,
       "flaky": false,
-      "durationMs": 10472,
-      "failure": {
-        "message": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 10000ms\n  - waiting for getByRole('heading', { level: 1 })\n",
-        "location": "AC-001-a.spec.ts:4"
-      }
+      "durationMs": 794,
+      "failure": null
     },
     {
       "id": "AC-001-b",
       "requirementId": "REQ-001",
       "must": "The displayed greeting text is exactly \"Hello, World!\"",
       "method": "e2e",
-      "status": "fail",
+      "status": "pass",
       "spec": "tests/e2e/specs/AC-001-b.spec.ts",
       "healed": false,
       "healAttempts": 0,
       "flaky": false,
-      "durationMs": 10548,
-      "failure": {
-        "message": "Error: expect(locator).toHaveText(expected) failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected: \"Hello, World!\"\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toHaveText\" with timeout 10000ms\n  - waiting for getByRole('heading', { level: 1 })\n",
-        "location": "AC-001-b.spec.ts:4"
-      }
+      "durationMs": 608,
+      "failure": null
     },
     {
       "id": "AC-002-a",
@@ -57,7 +51,7 @@
       "healed": false,
       "healAttempts": 0,
       "flaky": false,
-      "durationMs": 116,
+      "durationMs": 111,
       "failure": null
     },
     {
@@ -70,7 +64,7 @@
       "healed": false,
       "healAttempts": 0,
       "flaky": false,
-      "durationMs": 41,
+      "durationMs": 195,
       "failure": null
     },
     {
@@ -83,7 +77,7 @@
       "healed": false,
       "healAttempts": 0,
       "flaky": false,
-      "durationMs": 49,
+      "durationMs": 66,
       "failure": null
     }
   ]
