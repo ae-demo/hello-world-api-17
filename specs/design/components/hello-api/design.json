@@ -1,0 +1,20 @@
+{
+  "name": "hello-api",
+  "type": "service",
+  "version": "0.1.0",
+  "language": "Ballerina",
+  "buildpack": "docker",
+  "appPath": "hello-api",
+  "entrypoint": "deployment/service",
+  "exposure": "internet",
+  "stories": [
+    1,
+    2
+  ],
+  "dependencies": [],
+  "description": "Backend service exposing a single greeting endpoint that always returns a static \"Hello, World!\" message. Serves both the webapp (via its component dependency) and Developers calling it directly. Does not accept a name or any other parameter, does not persist or log requests, and requires no sign-in.",
+  "skillsPinned": [
+    "openapi-conventions",
+    "ballerina"
+  ]
+}

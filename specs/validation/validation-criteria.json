@@ -1,0 +1,23 @@
+{
+  "requirements": [
+    {
+      "id": "REQ-001",
+      "statement": "A Visitor can open the web app and see a static Hello, World! greeting rendered on screen",
+      "stories": [1],
+      "criteria": [
+        { "id": "AC-001-a", "must": "Opening the web app displays a greeting on screen without requiring sign-in", "method": "e2e" },
+        { "id": "AC-001-b", "must": "The displayed greeting text is exactly \"Hello, World!\"", "method": "e2e" }
+      ]
+    },
+    {
+      "id": "REQ-002",
+      "statement": "A Developer can call the greeting API directly and receive the static greeting",
+      "stories": [2],
+      "criteria": [
+        { "id": "AC-002-a", "must": "A direct GET request to the greeting endpoint returns HTTP 200", "method": "e2e" },
+        { "id": "AC-002-b", "must": "The response body contains the exact message \"Hello, World!\"", "method": "e2e" },
+        { "id": "AC-002-c", "must": "The endpoint is reachable without any authentication or API key", "method": "e2e" }
+      ]
+    }
+  ]
+}

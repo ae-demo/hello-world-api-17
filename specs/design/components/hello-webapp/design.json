@@ -1,0 +1,25 @@
+{
+  "name": "hello-webapp",
+  "type": "web-application",
+  "version": "0.1.0",
+  "language": "TypeScript",
+  "buildpack": "docker",
+  "appPath": "hello-webapp",
+  "entrypoint": "deployment/web-application",
+  "exposure": "internet",
+  "stories": [
+    1
+  ],
+  "dependencies": [
+    {
+      "description": "Calls the greeting endpoint to fetch and display the static Hello World message.",
+      "kind": "component",
+      "name": "hello-api"
+    }
+  ],
+  "description": "Single-page React app that calls hello-api and renders the greeting it returns. Serves the Visitor's story of confirming the demo works end to end. Does not implement any greeting logic itself, does not require sign-in, and holds no other pages or state.",
+  "skillsPinned": [
+    "wireframes",
+    "react-webapp"
+  ]
+}

@@ -1,0 +1,9 @@
+title Hello World API
+
+component hello-webapp as "Hello World Webapp" web-application [stories: 1]
+component hello-api as "Hello World API" service [stories: 1, 2]
+
+north -> hello-webapp
+north -> hello-api
+
+hello-webapp -> hello-api
