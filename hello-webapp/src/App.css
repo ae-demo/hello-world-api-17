@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  background: #f7f7f8;
+  color: #1a1a1a;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e5e8;
+  padding: 16px 32px;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.content {
+  flex: 1;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 64px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+}
+
+.heading {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.body-text {
+  color: #555;
+  margin: 0 0 8px;
+}
+
+.card {
+  width: 100%;
+  max-width: 320px;
+  border: 1px solid #e5e5e8;
+  border-radius: 12px;
+  padding: 20px 24px;
+  background: #ffffff;
+  margin-bottom: 8px;
+}
+
+.card-label {
+  font-size: 0.85rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.card-value {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+.card-connected .card-value {
+  color: #1a7f37;
+}
+
+.card-error .card-value {
+  color: #c0341d;
+}
+
+.card-caption {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 4px;
+}
+
+.btn {
+  padding: 12px 28px;
+  border-radius: 8px;
+  border: 1px solid #d0d0d4;
+  background: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #ff7a00;
+  border-color: #ff7a00;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background: #e56d00;
+}
