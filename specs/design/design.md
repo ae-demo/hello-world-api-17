@@ -2,7 +2,7 @@
 
 ## Overview
 
-A minimal end-to-end reference: `hello-api`, a Ballerina service, exposes a
+A minimal end-to-end reference: `hello-api`, a Go service, exposes a
 single public endpoint that always returns a static "Hello, World!" greeting;
 `hello-webapp`, a React single-page app, calls that endpoint and renders the
 greeting on screen. Both are public with no sign-in, so a Visitor can open the

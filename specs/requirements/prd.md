@@ -24,9 +24,9 @@ get the greeting programmatically.
 ## User Stories
 
 1. As a Visitor, I want to open the web app and see a "Hello, World!" greeting
- on screen, so that I can confirm the demo works end to end.
+on screen, so that I can confirm the demo works end to end.
 2. As a Developer, I want to call the greeting API directly, so that I can
- verify the service responds correctly or integrate it elsewhere.
+verify the service responds correctly or integrate it elsewhere.
 
 ## Product Decisions
 
@@ -36,8 +36,8 @@ rather than an API-only deliverable.
 parameters.
 - The API is publicly accessible with no sign-in required; the web app does
 not require authentication either.
-- Web app: TypeScript + React single-page app. Service: Ballerina. (Org
-default technology stack.)
+- Web app: TypeScript + React single-page app. Service: Go (explicit choice,
+overriding the org's default Ballerina-for-services stack).
 
 ## Phasing
 
